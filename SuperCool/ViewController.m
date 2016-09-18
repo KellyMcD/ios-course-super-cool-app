@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *coolLogo;
+@property (weak, nonatomic) IBOutlet UIImageView *coolBg;
+@property (weak, nonatomic) IBOutlet UIButton *uncoolButton;
 
 @end
 
@@ -22,6 +25,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)makeMeNotSoUncool:(id)sender {
+    coolLogo.hidden = true;
+    coolBg.hidden =true;
 }
 
 @end
